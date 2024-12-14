@@ -5,7 +5,8 @@ import Stats from 'three/addons/libs/stats.module.js'
 import { GUI } from 'dat.gui'
 
 const scene = new THREE.Scene()
-scene.background = new THREE.Color(0x120000)
+scene.background = new THREE.Color(0x123456)
+scene.background = new THREE.TextureLoader().load('../bg.png')
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 camera.position.z = 1.5
