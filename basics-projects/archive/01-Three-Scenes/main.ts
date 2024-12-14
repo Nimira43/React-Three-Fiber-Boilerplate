@@ -34,7 +34,6 @@ const material = new THREE.MeshNormalMaterial({ wireframe: true })
 
 const cube = new THREE.Mesh(geometry, material)
 sceneA.add(cube)
-//sceneC.add(cube)
 
 const stats = new Stats()
 document.body.appendChild(stats.dom)
@@ -59,9 +58,6 @@ gui.add(setScene, 'sceneC').name('Scene C')
 
 function animate() {
   requestAnimationFrame(animate)
-
-  //cube.rotation.x += 0.01
-  //cube.rotation.y += 0.01
 
   renderer.render(activeScene, camera)
 
